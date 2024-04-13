@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-test
+  labels:
+    app: my-app
+spec: # dedired state
+  containers:
+  - name: pod-test
+    image: nginx
