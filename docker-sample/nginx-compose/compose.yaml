@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  echo:
+    build: ./go
+  nginx:
+    build: ./nginx
+    ports:
+      - "9000:80"
+    depends_on:
+      - echo
